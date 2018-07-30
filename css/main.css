@@ -1,23 +1,28 @@
-html, body {
-    background: transparent;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .splash {
-    background: #101010;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* background: #101010; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .titlebox {
-    margin: 0;
-    padding: 2em;
-    text-align: center;
-    position: relative;
-    /* border: 6px solid transparent;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  /* border: 6px solid transparent;
     -moz-border-image: -moz-linear-gradient(45deg, red 0%, blue 100%);
     -webkit-border-image: -webkit-linear-gradient(45deg, red 0%, blue 100%);
     border-image: linear-gradient(45deg, red 0%, blue 100%);
@@ -25,17 +30,17 @@ html, body {
 }
 
 .gaelforce {
-    margin: 0;
-    font-family: 'Product Sans';
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    font-size: 2.2em;
-    color: #fff;
+  margin: 0;
+  font-family: 'Product Sans';
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 2.2em;
+  color: #fff;
 }
 
 .nospace {
-    letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .titlebox:after {
@@ -55,6 +60,7 @@ html, body {
 }
 
 /* motion */
+
 @keyframes gradient-animation {
   0% {
     background-position: 15% 0%;
