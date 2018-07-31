@@ -6,12 +6,50 @@
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/fonts.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     </head>
     <body>
+        <nav>
+            <div class="overlay">
+                <button onClick="toggleNav()" class="navbutton">
+                    <ul class="navicon">
+                        <li class="line"></li>
+                        <li class="line"></li>
+                        <li class="line"></li>
+                    </ul>
+                </button>
+                <div class="linkbox">
+                    <div class="linkwrapper">
+                        <ul class="links">
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleNav()">About Us</a>
+                            </li>
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleTeamNav()">Teams</a>
+                            </li>
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleNav()">Gallery</a>
+                            </li>
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleNav()">Calendar</a>
+                            </li>
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleNav()">Documents/Forms</a>
+                            </li>
+                            <li class="navlink">
+                                <a href="#" class="link" onclick="toggleNav()">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="splash">
             <div class="titlebox in">
                 <h1 class="gaelforce">Gael Force Robotic<span class="nospace">s</span></h1>
             </div>
         </div>
+        <script src="../js/index.js" charset="utf-8"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </body>
 </html>
