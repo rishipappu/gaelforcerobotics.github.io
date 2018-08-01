@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="../css/fonts.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     </head>
     <body>
         <nav>
@@ -44,11 +46,53 @@
                 </div>
             </div>
         </nav>
+        <div class="teamoverlay">
+            <button onClick="toggleTeamNav()" class="teambackbutton">
+                <ul class="arrowicon">
+                    <li class="arrowline"></li>
+                    <li class="arrowline"></li>
+                    <li class="arrowline"></li>
+                </ul>
+            </button>
+            <div class="letterwrapper">
+                <div class="teamletters">
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">B</a>
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">C</a>
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">R</a>
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">S</a>
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">X</a>
+                    <a href="#" class="teamletter" onClick="toggleTeamNav()">GFA</a>
+                </div>
+            </div>
+        </div>
         <div class="splash">
             <div class="titlebox in">
                 <h1 class="gaelforce">Gael Force Robotic<span class="nospace">s</span></h1>
             </div>
         </div>
+        <footer class="row">
+            <div class="col-lg-6 col-xs-12">
+                <h2 class="footertext">Gael Force Robotics</h2>
+                <p class="footertext">8151 Village Pkwy | Dublin, CA 94568</p>
+                <p class="footertext">
+                    Email: <a class="footertext mail" href="mailto:gaelforcerobotics@gmail.com">gaelforcerobotics@gmail.com</a>
+                </p>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="social">
+                    <a href="#" class="socialicons">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="socialicons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="socialicons">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <h3 class="copyright">Copyright &copy; <span id="currentYear"></span> Gael Force Robotics</h3>
+            </div>
+        </footer>
         <script src="../js/index.js" charset="utf-8"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </body>
