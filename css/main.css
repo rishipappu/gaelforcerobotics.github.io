@@ -518,6 +518,30 @@ footer {
     margin: 0 1em;
 }
 
+@-webkit-keyframes border-gradient-animation {
+  0% {
+    background-position: 15% 0%;
+  }
+  50% {
+    background-position: 85% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
+@-moz-keyframes border-gradient-animation {
+  0% {
+    background-position: 15% 0%;
+  }
+  50% {
+    background-position: 85% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
 @keyframes border-gradient-animation {
   0% {
     background-position: 15% 0%;
@@ -548,13 +572,49 @@ footer {
   }
 }
 
+@-webkit-keyframes frame-enter {
+  0% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), 7px calc(100% - 7px), 7px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 0% 100%);
+  }
+}
+
+@-moz-keyframes frame-enter {
+  0% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), 7px calc(100% - 7px), 7px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 0% 100%);
+  }
+}
+
 @-webkit-keyframes background-gradient-animation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 @-moz-keyframes background-gradient-animation {
-    0%{background-position:0% 51%}
+    0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
