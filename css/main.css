@@ -59,12 +59,16 @@ html, body {
   right: 0%;
   bottom: 0%;
   background: linear-gradient(45deg, #d10300, #216ae0);
+  background: -webkit-linear-gradient(45deg, #d10300, #216ae0);
+  background: -moz-linear-gradient(45deg, #d10300, #216ae0);
   background-size: 300% 300%;
   clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), 7px calc(100% - 7px), 7px 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 
 .titlebox.in:after {
   animation: frame-enter 1s forwards ease-in-out reverse, border-gradient-animation 10s ease-in-out infinite;
+  -webkit-animation: frame-enter 1s forwards ease-in-out reverse, border-gradient-animation 10s ease-in-out infinite;
+  -moz-animation: frame-enter 1s forwards ease-in-out reverse, border-gradient-animation 10s ease-in-out infinite;
 }
 
 nav {
@@ -516,6 +520,12 @@ footer {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 1em;
+}
+
+@media only screen and (max-width: 780px) {
+    .gaelforce {
+        font-size: 5.5em;
+    }
 }
 
 @-webkit-keyframes border-gradient-animation {
