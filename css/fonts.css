@@ -153,3 +153,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'Archia';
+    src: url('./Archia/archia-regular-webfont.eot');
+    src: url('./Archia/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Archia/archia-regular-webfont.woff2') format('woff2'),
+         url('./Archia/archia-regular-webfont.woff') format('woff'),
+         url('./Archia/archia-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
