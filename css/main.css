@@ -622,12 +622,60 @@ input[type='submit']:hover {
     height: 10em;
 }
 
+.documents {
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagetitle {
+    color: #fff;
+    font-family: 'Product Sans';
+    font-size: 4em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.formlink {
+    font-family: 'Archia';
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    margin: 1em 0;
+}
+
+.fileicon {
+    margin-right: 1em;
+}
+
+.formlinks > .formlink {
+    opacity: 1;
+    -moz-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    -webkit-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+}
+
+.formlinks:hover > .formlink {
+    opacity: 0.5;
+    -moz-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    -webkit-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+}
+
+.formlinks:hover > .formlink:hover {
+    opacity: 1;
+    -moz-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    -webkit-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+}
+
 @media only screen and (max-width: 760px) {
     .gaelforce {
         font-size: 2em;
         letter-spacing: 5px;
     }
-
     .althide {
         visibility: hidden;
         font-size: 0;
@@ -666,6 +714,12 @@ input[type='submit']:hover {
         width: 100vw;
         text-align: center;
         margin-top: 4em;
+    }
+    .pagetitle {
+        font-size: 2.5em;
+    }
+    .formlink {
+        font-size: 1.2em;
     }
 }
 
